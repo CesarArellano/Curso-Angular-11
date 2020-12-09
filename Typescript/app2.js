@@ -1,9 +1,9 @@
 "use strict";
 (function () {
-    var mensaje = "Hola";
-    var URL = "www.youtube.com";
+    let mensaje = "Hola";
+    const URL = "www.youtube.com";
     if (true) { // Este es otro scope
-        var mensaje_1 = 'Mundo';
+        let mensaje = 'Mundo';
     }
     console.log(mensaje);
 })();

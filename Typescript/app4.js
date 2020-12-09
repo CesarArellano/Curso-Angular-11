@@ -1,13 +1,12 @@
 "use strict";
 (function () {
     // Parámetros obligatorios, opcionales(variable?), y por defecto (=).
-    function activar(quien, objeto, momento) {
-        if (objeto === void 0) { objeto = 'batiseñal'; }
+    function activar(quien, objeto = 'batiseñal', momento) {
         if (momento) {
-            console.log(quien + " activ\u00F3 la " + objeto + " en la " + momento);
+            console.log(`${quien} activó la ${objeto} en la ${momento}`);
         }
         else {
-            console.log(quien + " activ\u00F3 la " + objeto);
+            console.log(`${quien} activó la ${objeto}`);
         }
     }
     // activar('Gordon', 'batiseñal especial','tarde'); 
@@ -15,13 +14,13 @@
     function getEdad() {
         return 18 + 2;
     }
-    var nombre = 'César';
-    var apellido = 'Arellano';
-    var edad = 20;
+    const nombre = 'César';
+    const apellido = 'Arellano';
+    const edad = 20;
     //const salida = nombre + apellido + edad;
     //const salida = nombre + " " + apellido + " ("+edad+" )";
     // Template literal EC6  
-    var salida = nombre + " " + apellido + " ( " + getEdad() + " )";
+    const salida = `${nombre} ${apellido} ( ${getEdad()} )`;
     //Output: César Arellano (Edad: 20)
     console.log(salida);
 })();

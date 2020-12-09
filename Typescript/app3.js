@@ -1,16 +1,16 @@
 "use strict";
 (function () {
     // Tipos de datos.
-    var mensaje = 'hola';
-    var numero = 123;
-    var booleano = true;
-    var hoy = new Date();
-    var cualquiercosa;
+    let mensaje = 'hola';
+    let numero = 123;
+    let booleano = true;
+    let hoy = new Date();
+    let cualquiercosa;
     cualquiercosa = mensaje;
     cualquiercosa = numero;
     //cualquiercosa = booleano; // da error
     //cualquiercosa = hoy; // da error
-    var spiderman = {
+    let spiderman = {
         nombre: 'Peter Parker',
         edad: 30
     };
