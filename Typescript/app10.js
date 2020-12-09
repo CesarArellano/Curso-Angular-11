@@ -1,13 +1,12 @@
-(() =>{
+"use strict";
+(() => {
     //Tipado del retorno de una función
-    const sumar = (a: number, b: number): number => a + b;
-
-    const  nombre = (): string => 'Hola César';
-
-    const obtenerSalario = (): Promise<string> => {
+    const sumar = (a, b) => a + b;
+    const nombre = () => 'Hola César';
+    const obtenerSalario = () => {
         return new Promise((resolve, reject) => {
             resolve('César');
         });
-    }
+    };
     obtenerSalario().then(a => console.log(a.toUpperCase()));
 })();
