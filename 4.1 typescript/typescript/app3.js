@@ -8,8 +8,8 @@
     var cualquiercosa;
     cualquiercosa = mensaje;
     cualquiercosa = numero;
-    cualquiercosa = booleano; // da error
-    cualquiercosa = hoy; // da error
+    //cualquiercosa = booleano; // da error
+    //cualquiercosa = hoy; // da error
     var spiderman = {
         nombre: 'Peter Parker',
         edad: 30

@@ -8,8 +8,8 @@
     let cualquiercosa: string | number;
     cualquiercosa = mensaje;
     cualquiercosa = numero;
-    cualquiercosa = booleano; // da error
-    cualquiercosa = hoy; // da error
+    //cualquiercosa = booleano; // da error
+    //cualquiercosa = hoy; // da error
 
     let spiderman = {
         nombre: 'Peter Parker',
