@@ -7,23 +7,16 @@
 </div>
 
 <div class="row">
-    <div class="col">
+    <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch animated fadeIn fast" *ngFor="let heroe of heroes; let i = index">
         <div class="card">
-            <img class="card-img-top" src="assets/img/aquaman.png" alt="Aquaman Hero">
+            <img class="card-img-top" [src]="heroe.img" [alt]="heroe.nombre">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary btn-block">Go somewhere</a>
-            </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card">
-            <img class="card-img-top" src="assets/img/aquaman.png" alt="Aquaman Hero">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary btn-block">Go somewhere</a>
+            <h5 class="card-title">{{ heroe.nombre }}</h5>
+            <p class="card-text">{{ heroe.bio }}</p>
+            <div class="text-center">
+                <p class="card-text"><small class="text-muted">{{ heroe.aparicion }}</small></p>
+                <button (click)="verHeroe(i)" type="button" class="btn btn-outline-primary btn-block">Ver más...</button>
+                <!-- <a [routerLink]="['/heroe', i]" class="btn btn-outline-primary btn-block">Ver más...</a> !-->
             </div>
         </div>
     </div>
