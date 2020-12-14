@@ -1,1 +1,23 @@
-<p>heroe works!</p>
+<div class="jumbotron jumbotron-fluid animated fadeIn fast">
+    <div class="container">
+        <h1 class="display-4 text-center">Información del héroe</h1>
+        <hr>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4 text-center">
+        <img [src]="heroe.img" [alt]="heroe.nombre" class="img-fluid">
+        <br><br>
+        <a [routerLink]="['/heroes']" class="btn btn-outline-danger btn-block">Regresar</a>
+    </div>
+    <div class="col-md-8">
+        <h3 class="display-6 text-center">{{ heroe.nombre }}</h3>
+        <h5 class="text-center" style="font-size: 14px;">{{ heroe.aparicion }}</h5>
+        <hr>
+        <p style="text-align:justify;">{{ heroe.bio }}</p>
+        <div class="text-center">
+            <img [src]="casaProductora" [alt]="heroe.casa" height="150px">
+        </div>
+
+    </div>
+</div>

@@ -11,13 +11,16 @@ import { HeroesService } from '../../servicios/heroes.service';
 })
 export class HeroeComponent {
   heroe:any = {};
+  casaProductora:string;
   constructor(private _heroesService:HeroesService, private activatedRoute:ActivatedRoute) {
     
     this.activatedRoute.params.subscribe( params => {
       console.log(params['id']);
       this.heroe = this._heroesService.getHeroe(params['id']);
-      console.log(this.heroe);
-      
+      if(this.heroe.casa == 'DC')
+        this.casaProductora = "assets/img/dc.png";
+      else
+        this.casaProductora = "assets/img/marvel.png";
     }); //Regresa una observador (estilo promesa)
 
     
