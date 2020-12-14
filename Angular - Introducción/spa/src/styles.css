@@ -25,3 +25,8 @@
 .fadeIn {
     animation-name: fadeIn;
 }
+.jumbotron {
+    background: none !important;
+    padding: 25px 0px !important;
+    margin-bottom: 0px !important;
+}
