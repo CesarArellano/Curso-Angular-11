@@ -15,7 +15,6 @@ export class HeroeComponent {
   constructor(private _heroesService:HeroesService, private activatedRoute:ActivatedRoute) {
     
     this.activatedRoute.params.subscribe( params => {
-      console.log(params['id']);
       this.heroe = this._heroesService.getHeroe(params['id']);
       if(this.heroe.casa == 'DC')
         this.casaProductora = "assets/img/dc.png";

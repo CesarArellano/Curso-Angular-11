@@ -1,0 +1,18 @@
+<div class="jumbotron jumbotron-fluid animated fadeIn fast">
+    <div class="container">
+        <h1 class="display-4">Buscando: <small>{{ termino }}</small></h1>
+        <hr>
+    </div>
+</div>
+<div class="row" *ngIf="heroesArr.length==0">
+    <div class="col-md-12">
+        <div class="alert alert-info" role="alert">
+            No se encontraron resultados :(
+        </div>
+    </div>
+
+</div>
+<div class="card-columns">
+        <app-heroe-tarjeta [heroe]="heroe" [index]="heroe.idx" *ngFor="let heroe of heroesArr;"></app-heroe-tarjeta>
+</div>
+
